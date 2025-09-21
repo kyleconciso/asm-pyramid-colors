@@ -1,0 +1,22 @@
+
+Hello, my name is Samuel Conciso, and this is my demo video for question one of my SA1.
+
+So first, let's talk about the code. These are the prerequisites, and I have used two variables for this code.
+
+Let’s go to the first segment. Here, we clear the screen by using interrupt 10H. Then we use the command MOV CX, 10, since we want to loop 10 times for the first loop. But overall, there are three loops:
+
+The first loop is for the row.
+
+The second loop is for the blank spaces in the column.
+
+The third loop is for the numbers in each row.
+
+Here you can see that I pushed CX for the first loop. This is so we can track the level of the pyramid. Because we are actually using CX for most of the loops, and since it already decrements for each loop, we use it to calculate how many times we’re going to loop for the blank spaces, or how many numbers we’re going to print for each row.
+
+For each step, the number of blank spaces increases, and the number of numbers decreases.
+
+The last segment here is the terminate section, where we use 4CH to end the program using interrupt 21H. And that’s pretty much it.
+
+Now, let’s compile the code. Here is the final result. As you can see, for each step on the Y-axis, the numbers decrease while the blank spaces increase. So, there’s an inverse relationship between the two, which I implemented by using three loops: one for the rows, one for the blank spaces, and one for the numbers.
+
+That concludes the demo video. Thank you for watching.
